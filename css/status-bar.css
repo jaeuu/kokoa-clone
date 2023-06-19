@@ -1,0 +1,33 @@
+.status-bar {
+  display: flex;
+  justify-content: center;
+  /*일단 모든 status-bar클래스의 요소들을 display-flex, justify-content: center 로 설정함*/
+  padding: 5px 3px;
+}
+
+.status-bar__column {
+  width: 33%; /* 모든 column에 전체화면 기준으로 33%의 width를 가지게함*/
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
+  /* status-bar__column 클래스가 여러개 이므로 첫번째 column의 span요소에만 적용 */
+}
+
+.status-bar__column:nth-child(2) {
+  /* 두번째 column의 자식을 중앙에 위치하게함*/
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  /* 마지막 column의 자식을 주축의 끝(오른쪽 끝)에 위치하게함 */
+  align-items: center; /* 마지막 column의 자식을 교차축에 대해 중앙에 위치하게함(동일한 높이에 있게함)*/
+}
+
+.status-bar__column .fa-battery-full {
+  /*status-bar__column 클래스 내부의 fa-battery-full 클래스에 적용*/
+  margin: 0px 5px; /*상하는 0px, 좌우는 5px*/
+}
