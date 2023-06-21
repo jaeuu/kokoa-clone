@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   /*일단 모든 status-bar클래스의 요소들을 display-flex, justify-content: center 로 설정함*/
-  padding: 5px 3px;
+  padding: 5px 3px; /* 상태바 상하좌우에 약간의 공간이 있으므로*/
 }
 
 .status-bar__column {
@@ -15,7 +15,7 @@
 }
 
 .status-bar__column:nth-child(2) {
-  /* 두번째 column의 자식을 중앙에 위치하게함*/
+  /* 두번째 column을 중앙에 위치하게함*/
   display: flex;
   justify-content: center;
 }
@@ -23,8 +23,8 @@
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
-  /* 마지막 column의 자식을 주축의 끝(오른쪽 끝)에 위치하게함 */
-  align-items: center; /* 마지막 column의 자식을 교차축에 대해 중앙에 위치하게함(동일한 높이에 있게함)*/
+  /* 마지막 column을 주축의 끝(오른쪽 끝)에 위치하게함 */
+  align-items: center; /* 마지막 column을 교차축에 대해 중앙에 위치하게함(동일한 높이에 있게함)*/
 }
 
 .status-bar__column .fa-battery-full {
