@@ -1,50 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "status-bar.css";
+
+/* Components */
+@import "components/status-bar.css";
+/* Screens */
+@import "screens/login.css";
+
 body {
   font-family: "Open Sans", sans-serif;
-}
-
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-
-.welcome-header__text {
-  width: 60%; /*전체화면 기준으로 60%의 width를 가짐.*/
-  opacity: 0.7; /* 투명도 지정*/
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column; /*login-form을 좌우 나란히가 아닌 위에서 아래로*/
-  margin: 0px 30px; /*login-fom의 좌우 여백을 줌*/
-}
-
-#login-form input {
-  border: none; /*login input의 border를 없앰*/
-
-  padding: 15px 0px; /*login-form의 input의 padding을 적용*/
-  font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2); /*border-bottom을 적용*/
-  margin-bottom: 25px; /*login-form input의 아래에 여백을 줌*/
-  transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4); /*palceholder의 글자들의 색을 연하게*/
-}
-
-#login-form input:focus {
-  border-color: var(--yellow);
-  /*login-form input에 border-bottom에 대해서만 적용했으므로 border color도 border bottem에 대해서만 적용된다.*/
 }

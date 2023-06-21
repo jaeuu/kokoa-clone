@@ -124,5 +124,6 @@ table {
 }
 
 input:focus {
-  outline: none; /*모든 input요소에 focus되면 outline이 생기는 것을 없애기 위해*/
+  outline: none;
+  /*모든 input요소에 focus되면 outline이 생기는 것을 없애기 위해*/
 }
