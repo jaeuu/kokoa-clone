@@ -1,11 +1,35 @@
 .nav {
+  position: fixed;
+  bottom: 0; /* 네비게이션 바를 하단에 고정*/
+  width: 100%;
   background-color: #f9f9fa;
-  padding: 20px 40px;
-  /*네비게이션 바의 위아래좌우 padding을 줌. 
-  그래서 ul과 nav간에 위아래좌우 여백이 있다.*/
+  padding: 20px 40px; /*네비게이션 바의 위아래좌우 padding을 줌. 그래서 ul과 nav간에 위아래좌우 여백이 있다.*/
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 
 .nav__list {
   display: flex; /*네비게이션 바를 수평으로 배치하기위해*/
   justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e; /* 아이콘의 색상 변경*/
+  position: relative;
+}
+
+/* 채팅창알림표시를 위한 css*/
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
 }

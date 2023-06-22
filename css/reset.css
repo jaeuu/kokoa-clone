@@ -127,3 +127,9 @@ input:focus {
   outline: none;
   /*모든 input요소에 focus되면 outline이 생기는 것을 없애기 위해*/
 }
+
+a {
+  color: inherit;
+  /* <a>가 쓰이는곳에서, <a>의 부모로부터 색상을 상속받는다.  */
+  text-decoration: none; /* 링크마다 있는 밑줄을 없애줌*/
+}
