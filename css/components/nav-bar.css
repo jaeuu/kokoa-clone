@@ -1,0 +1,11 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 40px;
+  /*네비게이션 바의 위아래좌우 padding을 줌. 
+  그래서 ul과 nav간에 위아래좌우 여백이 있다.*/
+}
+
+.nav__list {
+  display: flex; /*네비게이션 바를 수평으로 배치하기위해*/
+  justify-content: space-between;
+}
