@@ -1,3 +1,7 @@
+.user-component {
+  justify-content: space-between; /* 좌측에 있는 '이미지,text' 영역과 우측에 있는 '2 >'영역을 나눠줌*/
+}
+
 .user-component, 
 /* user-component의 바로 밑의 내부요소인 'user-component__column' div 에 대해 정렬해줌*/
 .user-component__column:first-child {
@@ -27,4 +31,18 @@
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__title_--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }

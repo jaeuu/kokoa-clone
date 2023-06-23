@@ -5,7 +5,7 @@
   padding: 10px 0px;
   /* 위아래 여백을 줌. padding을 주면 
   padding을 준 만큼 box의 크기가 커지는것처럼 보임 */
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px; /* 프로필과의 여백을 줌*/
 }
 
@@ -16,4 +16,17 @@
 
 .friends-screen {
   padding: 0px var(--horizontal-space);
+}
+
+.freinds-screen__channel {
+  margin-top: 25px; /* Channel 프로필 영역의 윗부분에 여백을줌 */
+  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Channel 프로필 영역위에 경계선을 줌 */
+  padding-top: 15px;
+}
+
+.freinds-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
 }
