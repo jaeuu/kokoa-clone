@@ -1,0 +1,14 @@
+#friends-display-link {
+  text-align: center;
+  display: block; /* block 요소로 바꾸고 문구를 가운데 정렬*/
+  background-color: #fafafa;
+  padding: 10px 0px;
+  /* 위아래 여백을 줌. padding을 주면 
+  padding을 준 만큼 box의 크기가 커지는것처럼 보임 */
+  font-size: 16px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+  /* 아이콘 색상 변경 */
+}

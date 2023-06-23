@@ -4,15 +4,14 @@
 
 /* Components */
 @import "components/status-bar.css";
-
 @import "components/nav-bar.css";
-
 @import "components/screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
-  font-family: "Open Sans", sans-serif;
-  height: 1000vh;
+  color: #2e363e; /* 전체의 기본 색상을 지정*/
+  font-family: "Open Sans", sans-serif; /* 전체의 기본 폰트를 지정*/
 }
