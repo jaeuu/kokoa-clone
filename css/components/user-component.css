@@ -44,5 +44,13 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex; /* 내부요소를 정렬하기 위해 flex를 해줌*/
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component-time {
+  margin-bottom: 10px;
+  display: block;
 }

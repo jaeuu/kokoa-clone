@@ -7,6 +7,7 @@
   padding을 준 만큼 box의 크기가 커지는것처럼 보임 */
   font-size: 16px;
   margin-bottom: 10px; /* 프로필과의 여백을 줌*/
+  margin-top: -15px;
 }
 
 #friends-display-link i {
