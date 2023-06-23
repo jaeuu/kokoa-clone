@@ -1,0 +1,30 @@
+.user-component, 
+/* user-component의 바로 밑의 내부요소인 'user-component__column' div 에 대해 정렬해줌*/
+.user-component__column:first-child {
+  /* 'user-component__column' 의 바로 밑의 내부요소를 정렬하려면 이렇게 해야함 */
+  display: flex;
+  align-items: center;
+}
+
+.user-component__avatar {
+  width: 70px;
+  height: 70px; /* 프로필사진 크기 조정*/
+  border-radius: 30px;
+  margin-right: 20px; /* 프로필사진과 이름사이의 여백을 만듬*/
+}
+
+.user-component__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.user-component__subtitle {
+  margin-top: 8px; /*이름과 상태메시지간의 여백을 만듬*/
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}

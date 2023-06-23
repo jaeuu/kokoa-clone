@@ -5,10 +5,15 @@
   padding: 10px 0px;
   /* 위아래 여백을 줌. padding을 주면 
   padding을 준 만큼 box의 크기가 커지는것처럼 보임 */
-  font-size: 16px;
+  font-size: 18px;
+  margin-bottom: 10px; /* 프로필과의 여백을 줌*/
 }
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
   /* 아이콘 색상 변경 */
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
 }
