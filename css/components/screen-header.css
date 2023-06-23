@@ -1,0 +1,16 @@
+.screen-header {
+  display: flex; /*내부요소들이 나란히 정렬되기를 원하므로*/
+  justify-content: space-between; /* Friends와 아이콘을 좌우로 정렬함*/
+  align-items: center; /* Friends와 아이콘을 교차축을 기준으로 동일한 높이로 맞추기 위해 center로 함*/
+  padding: 25px; /*상하좌우 모두 25px의 padding을 줌*/
+  padding-top: 40px; /*위쪽 padding만 40px로 설정*/
+}
+
+.screen-header__title {
+  font-size: 32px; /* Friends의 글자크기 변경*/
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px; /* 각 아이콘의 왼쪽에 margin을 줘서 각 아이콘의 왼쪽에 여백이 있게함*/
+}
