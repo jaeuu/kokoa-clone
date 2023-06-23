@@ -15,3 +15,7 @@ body {
   color: #2e363e; /* 전체의 기본 색상을 지정*/
   font-family: "Open Sans", sans-serif; /* 전체의 기본 폰트를 지정*/
 }
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
