@@ -21,7 +21,7 @@
 
 .freinds-screen__channel {
   margin-top: 25px; /* Channel 프로필 영역의 윗부분에 여백을줌 */
-  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Channel 프로필 영역위에 경계선을 줌 */
+  border-top: var(--main-border); /* Channel 프로필 영역위에 경계선을 줌 */
   padding-top: 15px;
 }
 
