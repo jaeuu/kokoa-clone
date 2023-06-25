@@ -1,0 +1,21 @@
+.alt-header {
+  padding: var(--horizontal-space); /*상하좌우 모두 25px의 padding을 줌*/
+  padding-top: 40px; /*위쪽 padding만 40px로 설정*/
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+} /* 요소의 오른쪽 여백을 부모 요소를 기준으로 자동으로 조정 */
+
+.alt-header__column:last-child {
+  margin-left: auto;
+} /* 요소의 왼쪽 여백을 부모 요소를 기준으로 자동으로 조정 */
