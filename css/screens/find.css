@@ -96,3 +96,25 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  /*open-post__heart-count에 hover되었을때 
+  open-post__heart-count 내부의 i에만 애니메이션이 동작*/
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}

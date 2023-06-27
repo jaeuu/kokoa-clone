@@ -15,3 +15,16 @@
 .screen-header__icons span {
   margin-left: 25px; /* 각 아이콘의 왼쪽에 margin을 줘서 각 아이콘의 왼쪽에 여백이 있게함*/
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  /* 아이콘에 마우스를 올리면 애니메이션이 동작함*/
+  animation: rotateCog 1s linear infinite;
+}

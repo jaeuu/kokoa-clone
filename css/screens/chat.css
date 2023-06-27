@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 110000vh;
+  height: 500vh;
 }
 
 #chat-screen .alt-header,
@@ -20,11 +20,24 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
-  margin-top: 130px;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -99,6 +112,7 @@
   box-sizing: border-box;
   padding: 5px 15px;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -119,6 +133,8 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -148,4 +164,27 @@
 .reply__column button:focus,
 .reply__column button:hover {
   outline: none;
+}
+
+.reply .fa-smile,
+.reply button,
+.reply .reply__column:first-child {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .fa-smile,
+.reply:focus-within button,
+.reply:focus-within .reply__column:first-child {
+  /* reply 내부에 어떤 element라도 focus되어있으면 
+  fa-smile, button,첫번째 reply__column에 적용*/
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-11%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
